@@ -1,0 +1,19 @@
+$color-green: #42b883;
+
+// base colors
+$color-white: #ffffff;
+$color-black: #333333;
+
+
+$color-gray: #9E9E9E;
+
+// fonts sizes
+$font-size-xs: 9px;
+$font-size-sm: 10px;
+$font-size-md: 12px;
+$font-size-lg: 14px;
+$font-size-xl: 24px;
+$font-size-xxl: 32px;
+
+$darken-ratio: 10%;
+$green-dark: darken($color-green, $darken-ratio);

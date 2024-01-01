@@ -1,0 +1,63 @@
+@import "variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+  background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: $color-gray;
+  border-radius: 6px;
+  width: 4px;
+  height: 10px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: transparent;
+  border-radius: 6px;
+  width: 10px;
+  height: 4px;
+  opacity: 0.5;
+}
+
+.page {
+  &__title {
+    padding: 20px 0;
+  }
+  &__content {
+    ol,
+    p,
+    blockquote,
+    h1,h2,h3,h4,h5,h6  {
+      margin-bottom: 20px;
+    }
+    ul,
+    ol {
+      margin-left: 20px;
+      max-width: 500px;
+      li {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
