@@ -3,6 +3,7 @@
 <template lang="pug">
 .page
   HeaderSection
+  
   router-view
 </template>
   

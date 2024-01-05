@@ -43,6 +43,12 @@ body,
 .page {
   &__title {
     padding: 20px 0;
+    &_selected {
+      background: -webkit-linear-gradient(315deg,#42d392 25%,#647eff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
   &__content {
     ol,
@@ -54,10 +60,27 @@ body,
     ul,
     ol {
       margin-left: 20px;
-      max-width: 500px;
+      // max-width: 500px;
       li {
         margin-bottom: 20px;
       }
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+  padding-bottom: 20px;
+  &__item {
+    width: calc(33% - 10px);
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 6px;
+    h4 {
+      color: #ffffffde;
     }
   }
 }
