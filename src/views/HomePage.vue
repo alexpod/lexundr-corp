@@ -11,6 +11,10 @@
           :key="item.id"
           v-if="data.features.items"
         )
+          img.cards__item-icon(
+            v-if="item.icon"
+            :src="`/public/images/${item.icon}.svg`"
+          )
           h4 {{ item.title }}
           p {{ item.text }}
       section.section__line
@@ -29,36 +33,42 @@ const data = reactive({
     items: [
       {
         id: 1,
+        icon: 'hub',
         title: 'Data Integration API:',
         text: `This API enables seamless data transfer between various systems and platforms, 
           eliminating the need for manual data entry and reducing errors.`,
       },
       {
         id: 2,
+        icon: 'receipt',
         title: 'Payment Processing API:',
         text: `Our payment processing API allows businesses to securely process payments online, via 
           mobile devices, or in-store.`,
       },
       {
         id: 3,
+        icon: 'chat',
         title: 'Customer Engagement API:',
         text: `This API enables businesses to engage with their customers through personalized 
           messaging and targeted offers, improving customer satisfaction and loyalty.`,
       },
       {
         id: 4,
+        icon: 'settings-applications',
         title: 'Workflow Automation API:',
         text: `Our workflow automation API streamlines business processes by automating repetitive 
           tasks and reducing manual intervention, saving time and resources.`,
       },
       {
         id: 5,
+        icon: 'monitoring',
         title: 'Analytics & Reporting API:',
         text: `This API provides real-time insights into business performance, enabling data-driven 
           decision making and continuous improvement.`,
       },
       {
         id: 6,
+        icon: 'verified-user',
         title: 'Security & Compliance API:',
         text: `Our security & compliance API ensures that sensitive data is protected and that 
           regulatory requirements are met, providing peace of mind for businesses operating in 
