@@ -71,14 +71,18 @@ body,
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
   gap: 10px;
   padding-bottom: 20px;
   &__item {
-    width: calc(33% - 10px);
+    width: calc(33.33% - 10px);
     background-color: #242424;
     padding: 20px;
     border-radius: 6px;
+    &-icon {
+      margin-bottom: 10px;
+    }
     h4 {
       color: #ffffffde;
     }
